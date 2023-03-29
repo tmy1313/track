@@ -157,9 +157,9 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="115" label="Jack Lemieux">
+            <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="4x100M" />
             <TreeItem nodeId="201" label="Hurdles (?)" />
           </TreeItem>
           <TreeItem nodeId="116" label="Jameson Witmer">
@@ -176,8 +176,8 @@ export default function StudentList() {
           </TreeItem>
           <TreeItem nodeId="118" label="Kirsten Senft">
             <TreeItem nodeId="201" label="100m" />
+            <TreeItem nodeId="201" label="200" />
             <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="" />
             <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="119" label="Kylah Boyd">

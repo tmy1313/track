@@ -3,7 +3,7 @@ import StudentList from './components/student-list';
 
 function App() {
   return (
-    <div className='fill-window'
+    <div
       style={{
         backgroundColor: "#1976d2"
       }}
