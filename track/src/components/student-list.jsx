@@ -4,17 +4,52 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import TreeItem from '@mui/lab/TreeItem';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+//import Button from '@mui/material/Button';
+//import IconButton from '@mui/material/IconButton';
+//import MenuIcon from '@mui/icons-material/Menu';
+
+
 
 const theme = createTheme({
   typography: {
     // Tell MUI what's the font-size on the html element is.
     htmlFontSize: 10,
+    allVariants: {
+      color: "#FFFFFF"
+    },
   },
 });
 
 export default function StudentList() {
   return (
     <ThemeProvider theme={theme}>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
+            {/*
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+            */}
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Crossroads Track & Field
+            </Typography>
+            {/*
+            <Button color="inherit">Login</Button>
+          */}
+          </Toolbar>
+        </AppBar>
+      </Box>
       <TreeView
         aria-label="students"
         defaultCollapseIcon={<ExpandMoreIcon />}

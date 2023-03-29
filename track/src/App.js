@@ -3,7 +3,14 @@ import StudentList from './components/student-list';
 
 function App() {
   return (
-    <StudentList />
+    <div
+      style={{
+        backgroundColor: "#1976d2"
+      }}
+    >
+      <StudentList />
+    </div>
+    
     //<div className="App">
     //  <header className="App-header">
     //    <img src={logo} className="App-logo" alt="logo" />
