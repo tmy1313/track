@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import studentList from './components/student-list';
+import StudentList from './components/student-list';
 
 function App() {
   return (
-    <studentList />
+    <StudentList />
     //<div className="App">
     //  <header className="App-header">
     //    <img src={logo} className="App-logo" alt="logo" />
