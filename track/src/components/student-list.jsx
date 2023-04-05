@@ -112,7 +112,6 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Discus" />
           </TreeItem>
           <TreeItem nodeId="108" label="Brooklyn Logan">
-            <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="4x100" />
             <TreeItem nodeId="201" label="Long Jump" />
