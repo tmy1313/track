@@ -87,17 +87,11 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="High Jump" />
             <TreeItem nodeId="201" label="Shot Put" />
           </TreeItem>
-          <TreeItem nodeId="104" label="Andrew George">
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-          </TreeItem>
           <TreeItem nodeId="105" label="AnnaGrace Leese">
             <TreeItem nodeId="201" label="400M" />
             <TreeItem nodeId="201" label="1600m" />
             <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
           <TreeItem nodeId="106" label="Brandon Beaman">
             <TreeItem nodeId="201" label="100m" />
@@ -112,9 +106,9 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Discus" />
           </TreeItem>
           <TreeItem nodeId="108" label="Brooklyn Logan">
+            <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="4x100" />
-            <TreeItem nodeId="201" label="Long Jump" />
+            <TreeItem nodeId="201" label="4x400m" />
             <TreeItem nodeId="201" label="Discus" />
           </TreeItem>
           <TreeItem nodeId="109" label="Chase Kahlaoui">
@@ -132,8 +126,8 @@ export default function StudentList() {
           <TreeItem nodeId="110" label="Dayonna Richardson">
             <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="200m" />
+            <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Shot Put" />
           </TreeItem>
           <TreeItem nodeId="111" label="Eli Phillips" >
             <TreeItem nodeId="201" label="100m" />
@@ -148,8 +142,9 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
           <TreeItem nodeId="113" label="Evan Moyer">
-            <TreeItem nodeId="201" label="100m" />
+            <TreeItem nodeId="201" label="100m ?" />
             <TreeItem nodeId="201" label="200m" />
+            <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="4x400m" />
           </TreeItem>
           <TreeItem nodeId="114" label="Heston Rickenbach">
@@ -178,7 +173,7 @@ export default function StudentList() {
           </TreeItem>
           <TreeItem nodeId="118" label="Kirsten Senft">
             <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200" />
+            <TreeItem nodeId="201" label="Discus" />
             <TreeItem nodeId="201" label="Shot Put" />
             <TreeItem nodeId="201" label="" />
           </TreeItem>
@@ -188,12 +183,6 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="4x400m" />
             <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
-          <TreeItem nodeId="120" label="Lilian Funnye">
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-          </TreeItem>
           <TreeItem nodeId="121" label="Matthew Craw">
             <TreeItem nodeId="201" label="Shot Put" />
             <TreeItem nodeId="201" label="Discus" />
@@ -201,10 +190,10 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="122" label="Matthew Johns">
-            <TreeItem nodeId="201" label="800m" />
             <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
+            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="123" label="Micheal Carlisle">
             <TreeItem nodeId="201" label="200m" />
@@ -251,8 +240,8 @@ export default function StudentList() {
           <TreeItem nodeId="129" label="Tyson Delaney">
             <TreeItem nodeId="201" label="800m" />
             <TreeItem nodeId="201" label="1600m" />
+            <TreeItem nodeId="201" label="400m ?" />
             <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="" />
           </TreeItem>
         </TreeItem>
       </TreeView>
