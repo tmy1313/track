@@ -76,10 +76,12 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="200m" />
             <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
           <TreeItem nodeId="103" label="Aiden Carroll" >
             <TreeItem nodeId="201" label="100m" />
+            <TreeItem nodeId="201" label="Shot Put" />
+            <TreeItem nodeId="201" label="Discus" />
           </TreeItem>
           <TreeItem nodeId="103" label="Alanah Funnye" >
             <TreeItem nodeId="201" label="Hurdles" />
@@ -88,7 +90,7 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Shot Put" />
           </TreeItem>
           <TreeItem nodeId="105" label="AnnaGrace Leese">
-            <TreeItem nodeId="201" label="400M" />
+            <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="1600m" />
             <TreeItem nodeId="201" label="4x400m" />
             <TreeItem nodeId="201" label="Long Jump" />
@@ -129,6 +131,12 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="4x100m" />
           </TreeItem>
+          <TreeItem nodeId="111" label="Drew Titus" >
+            <TreeItem nodeId="201" label="800m" />
+            <TreeItem nodeId="201" label="1600m" />
+            <TreeItem nodeId="201" label="High Jump ?" />
+            <TreeItem nodeId="201" label="Shot Put" />
+          </TreeItem>
           <TreeItem nodeId="111" label="Eli Phillips" >
             <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="Shot Put" />
@@ -142,7 +150,6 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
           <TreeItem nodeId="113" label="Evan Moyer">
-            <TreeItem nodeId="201" label="100m ?" />
             <TreeItem nodeId="201" label="200m" />
             <TreeItem nodeId="201" label="400m" />
             <TreeItem nodeId="201" label="4x400m" />
@@ -178,8 +185,8 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="119" label="Kylah Boyd">
+            <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
             <TreeItem nodeId="201" label="4x400m" />
             <TreeItem nodeId="201" label="Long Jump" />
           </TreeItem>
@@ -190,10 +197,10 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="" />
           </TreeItem>
           <TreeItem nodeId="122" label="Matthew Johns">
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
-            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="Shot Put" />
+            <TreeItem nodeId="201" label="Discus" />
+            <TreeItem nodeId="201" label="Long Jump" />
+            <TreeItem nodeId="201" label="High Jump" />
           </TreeItem>
           <TreeItem nodeId="123" label="Micheal Carlisle">
             <TreeItem nodeId="201" label="200m" />
@@ -205,7 +212,7 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="200m" />
             <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="" />
+            <TreeItem nodeId="201" label="4x400m" />
           </TreeItem>
           <TreeItem nodeId="125" label="Natalie Hinkle">
             <TreeItem nodeId="201" label="" />
@@ -240,7 +247,7 @@ export default function StudentList() {
           <TreeItem nodeId="129" label="Tyson Delaney">
             <TreeItem nodeId="201" label="800m" />
             <TreeItem nodeId="201" label="1600m" />
-            <TreeItem nodeId="201" label="400m ?" />
+            <TreeItem nodeId="201" label="" />
             <TreeItem nodeId="201" label="4x400m" />
           </TreeItem>
         </TreeItem>
