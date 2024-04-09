@@ -56,14 +56,127 @@ export default function StudentList() {
         defaultExpandIcon={<ChevronRightIcon />}
       >
         <TreeItem nodeId="1" label="Order of Events">
-          <TreeItem nodeId="2" label="Hurdles" />
-          <TreeItem nodeId="3" label="100m" />
-          <TreeItem nodeId="4" label="1600m" />
-          <TreeItem nodeId="5" label="4x100m" />
-          <TreeItem nodeId="6" label="400m" />
-          <TreeItem nodeId="7" label="800m" />
-          <TreeItem nodeId="8" label="200m" />
-          <TreeItem nodeId="9" label="4x400m" />
+          <TreeItem nodeId="2" label="Hurdles" >
+            <TreeItem nodeId="3000" label="Girls">
+              <TreeItem nodeId="201" label="Hurdles" />
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="102" label="Anthony Plever"/>
+              <TreeItem nodeId="102" label="Jason Eshelman"/>
+              <TreeItem nodeId="121" label="Sean Porter"/>
+              <TreeItem nodeId="124" label="Tyson Stouffer"/>
+              <TreeItem nodeId="125" label="Zane Rose"></TreeItem>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="3" label="100m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="126" label="Abby Snyder"/>
+              <TreeItem nodeId="128" label="Anna Keim"/>
+              <TreeItem nodeId="130" label="Danica Hobart"/>
+              <TreeItem nodeId="129" label="Devyn Veres"/>
+              <TreeItem nodeId="132" label="Kinley Strayer"/>
+              <TreeItem nodeId="135" label="Tenley Patterson"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="101" label="Adam Van Sickle"/>
+              <TreeItem nodeId="102" label="Anthony Plever"/>
+              <TreeItem nodeId="103" label="Brandon Beaman"/>
+              <TreeItem nodeId="105" label="Brysen Rodrigo"/>
+              <TreeItem nodeId="109" label="Eli Phillips"/>
+              <TreeItem nodeId="111" label="Gabriel Barraclough"/>
+              <TreeItem nodeId="113" label="Johnathan High"/>
+              <TreeItem nodeId="114" label="Jason Eshelman"/>
+              <TreeItem nodeId="115" label="Bo Wilson"/>
+              <TreeItem nodeId="116" label="Logan English"/>
+              <TreeItem nodeId="117" label="Lucas Roseman"/>
+              <TreeItem nodeId="118" label="Nathan Robison"/>
+              <TreeItem nodeId="119" label="Nolan Rhine"/>
+              <TreeItem nodeId="122" label="Trevor Weltor"/>
+              <TreeItem nodeId="124" label="Tyson Stouffer"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="4" label="1600m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="134" label="Nora Maurer"/>
+              <TreeItem nodeId="131" label="Eloise Place"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="107" label="Chase Montgomery"/>
+              <TreeItem nodeId="118" label="Nathan Robison"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="5" label="4x100m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="126" label="Abby Snyder"/>
+              <TreeItem nodeId="128" label="Anna Keim"/>
+              <TreeItem nodeId="130" label="Danica Hobart"/>
+              <TreeItem nodeId="132" label="Kinley Strayer"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="102" label="Anthony Plever"/>
+              <TreeItem nodeId="103" label="Brandon Beaman"/>
+              <TreeItem nodeId="109" label="Eli Phillips"/>
+              <TreeItem nodeId="111" label="Gabriel Barraclough" />
+              <TreeItem nodeId="111" label="Jack Lemieux" />
+              <TreeItem nodeId="113" label="Johnathan High"/>
+              <TreeItem nodeId="115" label="Bo Wilson"/>
+              <TreeItem nodeId="116" label="Logan English"/>
+              <TreeItem nodeId="119" label="Nolan Rhine"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="6" label="400m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="130" label="Danica Hobart"/>
+              <TreeItem nodeId="135" label="Tenley Patterson"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="108" label="Declan Mehaffey"/>
+              <TreeItem nodeId="111" label="Jack Lemieux"/>
+              <TreeItem nodeId="121" label="Sean Porter"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="7" label="800m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="131" label="Eloise Place"/>
+              <TreeItem nodeId="133" label="Kylah Boyd"/>
+              <TreeItem nodeId="134" label="Nora Maurer"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="107" label="Chase Montgomery"/>
+              <TreeItem nodeId="109" label="Derek Bachman"/>
+              <TreeItem nodeId="111" label="Jack Lemieux" />
+              <TreeItem nodeId="118" label="Nathan Robison"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="8" label="200m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="128" label="Anna Keim"/>
+              <TreeItem nodeId="130" label="Danica Hobart"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="101" label="Adam Van Sickle"/>
+              <TreeItem nodeId="103" label="Brandon Beaman" />
+              <TreeItem nodeId="110" label="Evan Moyer"/>
+              <TreeItem nodeId="114" label="Jason Eshelman"/>
+              <TreeItem nodeId="115" label="Bo Wilson"/>
+              <TreeItem nodeId="119" label="Nolan Rhine"/>
+              <TreeItem nodeId="122" label="Trevor Weltor"/>
+            </TreeItem>
+          </TreeItem>
+          <TreeItem nodeId="9" label="4x400m" >
+            <TreeItem nodeId="3000" label="Girls" >
+              <TreeItem nodeId="126" label="Abby Snyder"/>
+              <TreeItem nodeId="128" label="Anna Keim"/>
+              <TreeItem nodeId="133" label="Kylah Boyd"/>
+              <TreeItem nodeId="134" label="Nora Maurer"/>
+            </TreeItem>
+            <TreeItem nodeId="4000" label="Boys" >
+              <TreeItem nodeId="107" label="Chase Montgomery"/>
+              <TreeItem nodeId="108" label="Declan Mehaffey"/>
+              <TreeItem nodeId="110" label="Evan Moyer"/>
+              <TreeItem nodeId="121" label="Sean Porter"/>
+            </TreeItem>
+          </TreeItem>
         </TreeItem>
         <TreeItem nodeId="100" label="Athletes">
           <TreeItem nodeId="101" label="Adam Van Sickle">
@@ -113,7 +226,7 @@ export default function StudentList() {
             <TreeItem nodeId="201" label="Shot Put" />
             <TreeItem nodeId="201" label="Discus" />
           </TreeItem>
-          <TreeItem nodeId="109" label="Eli Phillips">
+          <TreeItem nodeId="103" label="Brandon Beaman" >
             <TreeItem nodeId="201" label="100m" />
             <TreeItem nodeId="201" label="200m" />
             <TreeItem nodeId="201" label="4x100m" />
@@ -195,7 +308,7 @@ export default function StudentList() {
           </TreeItem>
           <TreeItem nodeId="124" label="Tyson Stouffer">
             <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="HHurdles" />
+            <TreeItem nodeId="201" label="Hurdles" />
             <TreeItem nodeId="201" label="Long Jump" />
             <TreeItem nodeId="201" label="High Jump" />
           </TreeItem>
