@@ -181,7 +181,7 @@ export default function StudentList() {
               <TreeItem nodeId="121" label="Sean Porter"/>
             </TreeItem>
           </TreeItem>
-          <TreeItem nodeId="9" label="Long Jump" >
+          <TreeItem nodeId="10" label="Long Jump" >
             <TreeItem nodeId="3000" label="Girls" >
               <TreeItem nodeId="131" label="Eloise Place"/>
               <TreeItem nodeId="133" label="Kylah Boyd"/>
@@ -201,7 +201,7 @@ export default function StudentList() {
               <TreeItem nodeId="111" label="Jackson Sosick"/>
             </TreeItem>
           </TreeItem>
-          <TreeItem nodeId="9" label="High Jump" >
+          <TreeItem nodeId="11" label="High Jump" >
             <TreeItem nodeId="3000" label="Girls" >
 
             </TreeItem>
@@ -218,7 +218,7 @@ export default function StudentList() {
               <TreeItem nodeId="123" label="Tyson Kirchner"/>
             </TreeItem>
           </TreeItem>
-          <TreeItem nodeId="9" label="Shot Put" >
+          <TreeItem nodeId="12" label="Shot Put" >
             <TreeItem nodeId="3000" label="Girls" >
               <TreeItem nodeId="129" label="Devyn Veres"/>
               <TreeItem nodeId="132" label="Kinley Strayer"/>
@@ -235,7 +235,7 @@ export default function StudentList() {
               <TreeItem nodeId="125" label="Zane Rose"/>              
             </TreeItem>
           </TreeItem>
-          <TreeItem nodeId="9" label="Discus" >
+          <TreeItem nodeId="13" label="Discus" >
             <TreeItem nodeId="3000" label="Girls" >
               <TreeItem nodeId="129" label="Devyn Veres"/>
             </TreeItem>
