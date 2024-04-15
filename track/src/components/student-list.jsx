@@ -121,13 +121,13 @@ export default function StudentList() {
           { events.sort((a, b) => a - b)
             .map((evt) => (
               <TreeItem nodeId={'evt-' + evt.id} label={evt.name} >
-                <TreeItem nodeId="" label="Girls" >
+                <TreeItem nodeId={'evt-' + evt.id + 'G'} label="Girls" >
                   { getAthletesByEvent(evt.id)
                   .filter((a) => a.gender === 'F')
                   .map((a) => (
                     <TreeItem nodeId={'ath-' + a.id} label={a.name} />))}
                 </TreeItem>
-                <TreeItem nodeId="" label="Boys" >
+                <TreeItem nodeId={'evt-' + evt.id + 'B'} label="Boys" >
                   { getAthletesByEvent(evt.id)
                   .filter((a) => a.gender === 'M')
                   .map((a) => (
