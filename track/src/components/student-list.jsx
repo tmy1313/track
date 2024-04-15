@@ -25,6 +25,64 @@ const theme = createTheme({
 });
 
 export default function StudentList() {
+  const events = [{'id': 1, 'name': 'Hurdles', 'order': 1},
+    {'id': 2, 'name': '100m', 'order': 2},
+    {'id': 3, 'name': '1600m', 'order': 3},
+    {'id': 4, 'name': '4x100m', 'order': 4},
+    {'id': 5, 'name': '400m', 'order': 5},
+    {'id': 6, 'name': '800m', 'order': 6},
+    {'id': 7, 'name': '200m', 'order': 7},
+    {'id': 8, 'name': '4x400m', 'order': 8},
+    {'id': 9, 'name': 'Long Jump', 'order': 9},
+    {'id': 10, 'name': 'High Jump', 'order': 10},
+    {'id': 11, 'name': 'Discus', 'order': 11},
+    {'id': 12, 'name': 'Shot Put', 'order': 12},
+  ];
+  const athletes =[ 
+    {'id': 1, 'gender': 'M', 'name': 'Adam Van Sickle', 'events': [2,7,9,8]},
+    {'id': 2, 'gender': 'M', 'name': 'Anthony Plever', 'events': [2,1,9]},
+    {'id': 3, 'gender': 'M', 'name': 'Braxston Marshall', 'events': [11,12]},
+    {'id': 4, 'gender': 'M', 'name': 'Brandon Beaman', 'events': [2,7,4,12]},
+    {'id': 5, 'gender': 'M', 'name': 'Brysen Rodrigo', 'events': [2,11]},
+    {'id': 6, 'gender': 'M', 'name': 'Camden Crouse', 'events': [11,12]},
+    {'id': 7, 'gender': 'M', 'name': 'Chase Montgomery', 'events': [6,3,8]},
+    {'id': 8, 'gender': 'M', 'name': 'Declan Mehaffey', 'events': [5,8,9,10]},
+    {'id': 9, 'gender': 'M', 'name': 'Derek Bachman', 'events': [6,10,11,12]},
+    {'id': 10, 'gender': 'M', 'name': 'Eli Phillips', 'events': [11]},
+    {'id': 11, 'gender': 'M', 'name': 'Evan Moyer', 'events': [7,8,9,10]},
+    {'id': 12, 'gender': 'M', 'name': 'Gabriel Barraclough', 'events': [2,4,9,10]},
+    {'id': 13, 'gender': 'M', 'name': 'Jack Lemieux', 'events': [4,5,6]},
+    {'id': 14, 'gender': 'M', 'name': 'Jackson Sosick', 'events': [2,7,9]},
+    {'id': 15, 'gender': 'M', 'name': 'Jaxon Bailey', 'events': [9,11,12]},
+    {'id': 16, 'gender': 'M', 'name': 'Johnathan High', 'events': [2,4,9,10]},
+    {'id': 17, 'gender': 'M', 'name': 'Jason Eshelman', 'events': [2,7,1]},
+    {'id': 18, 'gender': 'M', 'name': 'Bo Wilson', 'events': [2,7,4,12]},
+    {'id': 19, 'gender': 'M', 'name': 'Logan English', 'events': [2,4,9,10]},
+    {'id': 20, 'gender': 'M', 'name': 'Lucas Roseman', 'events': [2,11,12]},
+    {'id': 21, 'gender': 'M', 'name': 'Nathan Robison', 'events': [2,6,3]},
+    {'id': 22, 'gender': 'M', 'name': 'Nolan Rhine', 'events': [2,7,4]},
+    {'id': 23, 'gender': 'M', 'name': 'Sean Porter', 'events': [5,8,1,10]},
+    {'id': 24, 'gender': 'M', 'name': 'Trevor Weltor', 'events': [2,7]},
+    {'id': 25, 'gender': 'M', 'name': 'Tyson Kirchner', 'events': [7,4,9,10]},
+    {'id': 26, 'gender': 'M', 'name': 'Tyson Stouffer', 'events': [2,1,9,10]},
+    {'id': 27, 'gender': 'M', 'name': 'Zane Rose', 'events': [1,10,11,12]},
+    {'id': 28, 'gender': 'F', 'name': 'Abby Snyder', 'events': [2,4,8]},
+    {'id': 29, 'gender': 'F', 'name': 'Anna Keim', 'events': [2,7,4,8]},
+    {'id': 30, 'gender': 'F', 'name': 'Callie Shade', 'events': [5,6,3]},
+    {'id': 31, 'gender': 'F', 'name': 'Danica Hobart', 'events': [2,7,5,4]},
+    {'id': 32, 'gender': 'F', 'name': 'Devyn Veres', 'events': [2,11,12]},
+    {'id': 33, 'gender': 'F', 'name': 'Eloise Place', 'events': [6,3,9]},
+    {'id': 34, 'gender': 'F', 'name': 'Eloise Place', 'events': [6,3,9]},
+    {'id': 35, 'gender': 'F', 'name': 'Kinley Strayer', 'events': [2,4,1,12]},
+    {'id': 36, 'gender': 'F', 'name': 'Kylah Boyd', 'events': [6,8,10]},
+    {'id': 37, 'gender': 'F', 'name': 'Nora Maurer', 'events': [6,3,8]},
+    {'id': 38, 'gender': 'F', 'name': 'Tenley Patterson', 'events': [2,5,12]},
+  ];  
+  
+  const getEvent = (id) => {
+    return events.find((event) => event.id === id);
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
@@ -252,206 +310,15 @@ export default function StudentList() {
           </TreeItem>
         </TreeItem>
         <TreeItem nodeId="100" label="Athletes">
-          <TreeItem nodeId="101" label="Adam Van Sickle">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="4x400m" />
-          </TreeItem>
-          <TreeItem nodeId="102" label="Anthony Plever">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="Long Jump" />
-          </TreeItem>
-          <TreeItem nodeId="103" label="Braxston Marshall" >
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="104" label="Brandon Beaman" >
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Shot Put" />
-          </TreeItem>
-          <TreeItem nodeId="105" label="Brysen Rodrigo">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="106" label="Camden Crouse">
-            <TreeItem nodeId="201" label="Discus" />
-            <TreeItem nodeId="201" label="Shot Put" />
-          </TreeItem>
-          <TreeItem nodeId="107" label="Chase Montgomery">
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
-            <TreeItem nodeId="201" label="4x400m" />
-          </TreeItem>
-          <TreeItem nodeId="108" label="Declan Mehaffey">
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="109" label="Derek Bachman">
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="High Jump" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="110" label="Eli Phillips">
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="111" label="Evan Moyer">
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="112" label="Gabriel Barraclough" >
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="113" label="Jack Lemieux" >
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="800m" />
-          </TreeItem>
-          <TreeItem nodeId="114" label="Jackson Sosick" >
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-          </TreeItem>
-          <TreeItem nodeId="115" label="Jaxon Bailey">
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="116" label="Johnathan High">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="117" label="Jason Eshelman">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="" />
-          </TreeItem>
-          <TreeItem nodeId="118" label="Bo Wilson">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Shot Put" />
-          </TreeItem>
-          <TreeItem nodeId="119" label="Logan English">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="120" label="Lucas Roseman">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="121" label="Nathan Robison">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
-          </TreeItem>
-          <TreeItem nodeId="122" label="Nolan Rhine">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x100m" />
-          </TreeItem>
-          <TreeItem nodeId="123" label="Sean Porter">
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="124" label="Trevor Weltor">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-          </TreeItem>
-          <TreeItem nodeId="125" label="Tyson Kirchner">
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="High Jump" />
-            <TreeItem nodeId="201" label="Long Jump" />
-          </TreeItem>
-          <TreeItem nodeId="126" label="Tyson Stouffer">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="High Jump" />
-          </TreeItem>
-          <TreeItem nodeId="127" label="Zane Rose">
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="Long Jump" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discus" />
-          </TreeItem>
-          <TreeItem nodeId="150" label="Abby Snyder">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="4x400m" />
-          </TreeItem>
-          <TreeItem nodeId="151" label="Anna Grace Leese">
-          
-          </TreeItem>
-          <TreeItem nodeId="152" label="Anna Keim">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="4x400m" />
-          </TreeItem>
-          <TreeItem nodeId="153" label="Callie Shade">
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
-          </TreeItem>
-          <TreeItem nodeId="154" label="Danica Hobart">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="200m" />
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="4x100m" />
-          </TreeItem>
-          <TreeItem nodeId="155" label="Devyn Veres">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="Shot Put" />
-            <TreeItem nodeId="201" label="Discuss" />
-          </TreeItem>
-          <TreeItem nodeId="156" label="Eloise Place">
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
-            <TreeItem nodeId="201" label="Long Jump ?" />
-          </TreeItem>
-          <TreeItem nodeId="157" label="Kinley Strayer">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="4x100m" />
-            <TreeItem nodeId="201" label="Hurdles" />
-            <TreeItem nodeId="201" label="Shot Put" />
-          </TreeItem>
-          <TreeItem nodeId="158" label="Kylah Boyd">
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="4x400m" />
-            <TreeItem nodeId="201" label="Long Jump" />
-          </TreeItem>
-          <TreeItem nodeId="159" label="Nora Maurer">
-            <TreeItem nodeId="201" label="800m" />
-            <TreeItem nodeId="201" label="1600m" />
-            <TreeItem nodeId="201" label="4x400m" />
-          </TreeItem>
-          <TreeItem nodeId="160" label="Tenley Patterson">
-            <TreeItem nodeId="201" label="100m" />
-            <TreeItem nodeId="201" label="400m" />
-            <TreeItem nodeId="201" label="Shot Put" />
-          </TreeItem>
-        </TreeItem>
+          { athletes
+            .sort((a, b) => a.gender.localeCompare(b.gender) || a.name.localeCompare(b.name))
+            .map(a => (
+              <TreeItem nodeId={a.id} label={a.name}>
+                {a.events.map((id) => (
+                  <TreeItem nodeId={a.id + "_" + getEvent(id).name} label={getEvent(id).name} />
+                ))}
+              </TreeItem>))}
+        </TreeItem>  
       </TreeView>
     </ThemeProvider>
   );
