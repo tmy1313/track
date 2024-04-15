@@ -84,7 +84,7 @@ export default function StudentList() {
   }
 
   const getAthletesByEvent = (id) => {
-    return atheletes.filter((a) => a.events.find((evt) => evt.id === id) || null);
+    return athletes.filter((a) => a.events.find((evt) => evt.id === id) || null);
   }
 
   return (
@@ -148,4 +148,4 @@ export default function StudentList() {
       </TreeView>
     </ThemeProvider>
   );
-}
+} 
