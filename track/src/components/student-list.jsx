@@ -39,7 +39,7 @@ export default function StudentList() {
     {'id': 12, 'name': 'Shot Put', 'order': 12},
   ];
   const athletes =[ 
-    {'id': 1, 'gender': 'M', 'name': 'Adam Van Sickle', 'events': [2,7,9,8]},
+    {'id': 1, 'gender': 'M', 'name': 'Adam Van Sickle', 'events': [2,7,9]},
     {'id': 2, 'gender': 'M', 'name': 'Anthony Plever', 'events': [2,1,9]},
     {'id': 3, 'gender': 'M', 'name': 'Braxston Marshall', 'events': [11,12]},
     {'id': 4, 'gender': 'M', 'name': 'Brandon Beaman', 'events': [2,7,4,12]},
@@ -83,11 +83,6 @@ export default function StudentList() {
   }
 
   const getAthletesByEvent = (id) => {
-    console.log(id);
-    console.log(athletes.filter((a) => {
-      console.log(a.events);
-      return a.events.includes(id); 
-    }));
     return athletes.filter((a) => a.events.includes(id));
   }
 
