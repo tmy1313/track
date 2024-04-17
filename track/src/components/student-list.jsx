@@ -83,6 +83,7 @@ export default function StudentList() {
   }
 
   const getAthletesByEvent = (id) => {
+    console.log(athletes.filter((a) => a.events.find((evt) => evt.id === id)));
     return athletes.filter((a) => a.events.find((evt) => evt.id === id));
   }
 
