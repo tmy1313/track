@@ -43,7 +43,7 @@ export default function StudentList() {
     {'id': 2, 'gender': 'M', 'name': 'Anthony Plever', 'events': [2,1,9]},
     {'id': 3, 'gender': 'M', 'name': 'Braxston Marshall', 'events': [11,12]},
     {'id': 4, 'gender': 'M', 'name': 'Brandon Beaman', 'events': [2,7,4,12]},
-    {'id': 5, 'gender': 'M', 'name': 'Brysen Rodrigo', 'events': [2,1,11,12]},
+    {'id': 5, 'gender': 'M', 'name': 'Brysen Rodrigo', 'events': [5,1,11,12]},
     {'id': 6, 'gender': 'M', 'name': 'Camden Crouse', 'events': [11,12]},
     {'id': 7, 'gender': 'M', 'name': 'Chase Montgomery', 'events': [6,3,8]},
     {'id': 8, 'gender': 'M', 'name': 'Declan Mehaffey', 'events': [6,3,8,9]},
