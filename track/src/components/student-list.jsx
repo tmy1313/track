@@ -124,7 +124,7 @@ export default function StudentList() {
                   { getAthletesByEvent(evt.id)
                   .filter((a) => a.gender === 'F')
                   .map((a) => (
-                    <TreeItem nodeId={'ath-' + a.id} label={a.name} />))}
+                    <TreeItem nodeId={'ath-' + a.id + "-evt-" + evt.id} label={a.name} />))}
                 </TreeItem>
                 <TreeItem nodeId={'evt-' + evt.id + '-B'} label="Boys" >
                   { getAthletesByEvent(evt.id)
