@@ -83,14 +83,12 @@ export default function StudentList() {
     {'id': 45, 'gender': 'M', 'name': 'Max Beam', 'events': [5,6,3,8]},
     {'id': 46, 'gender': 'F', 'name': 'Breea Russell', 'events': [2,7]},
     {'id': 47, 'gender': 'M', 'name': 'Charlotte Sierer', 'events': [5]},
-    {'id': 55, 'gender': 'M', 'name': 'Nathan Robison', 'events': []},
     {'id': 56, 'gender': 'F', 'name': 'Naevia Zortman', 'events': [12,11,7]},
     {'id': 57, 'gender': 'F', 'name': 'Dhungana Anuja', 'events': [2]},
     {'id': 59, 'gender': 'M', 'name': 'Bode Montgomery', 'events': [2,5,4]},
-    {'id': 60, 'gender': 'F', 'name': 'Elaina', 'events': []},
     {'id': 62, 'gender': 'M', 'name': 'Nathan Langan', 'events': [2,5,4]},
-    {'id': 63, 'gender': 'F', 'name': 'Kinley Strayer', 'events': [12,1]}
-    {'id': 64, 'gender': 'F', 'name': 'Briana Vanko', 'events': [2]}
+    {'id': 63, 'gender': 'F', 'name': 'Kinley Strayer', 'events': [12,1]},
+    {'id': 64, 'gender': 'F', 'name': 'Briana Vanko', 'events': [2]},
     {'id': 65, 'gender': 'M', 'name': 'Brayden Murlin', 'events': [10,11,2]},
     {'id': 66, 'gender': 'F', 'name': 'Elaina Book', 'events': [9,1,4]},
     {'id': 67, 'gender': 'F', 'name': 'Lana Lehman', 'events': [9,2,7,4]},
